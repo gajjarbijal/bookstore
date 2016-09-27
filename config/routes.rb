@@ -55,7 +55,7 @@ Rails.application.routes.draw do
 
   get 'books/index'
 
-  get 'books/show'
+  get 'book/:id', to: 'books#show', as: 'books'
 
   get 'about/index'
 

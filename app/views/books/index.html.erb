@@ -1,2 +1,36 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<div id="books-index">
+	<div class="row">
+		<div class="col-md-3 col-sm-3">
+			<h3>Ajax on Rails</h3>
+			<%= image_tag('cover/book1.gif') %>
+			<%= link_to 'Read More',books_path(id: 1), class: 'btn btn-primary'%>
+		</div>
+		<div class="col-md-3 col-sm-3">
+			<h3>PHP & Mysql</h3>
+			<%= image_tag('cover/book2.png') %>
+			<%= link_to 'Read More',books_path(id: 2), class: 'btn btn-primary'%>
+		</div>
+		<div class="col-md-3 col-sm-3">
+			<h3>Head first PHP</h3>
+			<%= image_tag('cover/book3.jpg') %>
+			<%= link_to 'Read More',books_path(id: 3), class: 'btn btn-primary'%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-3">
+			<h3>HTML 5</h3>
+			<%= image_tag('cover/book4.jpg') %>
+			<%= link_to 'Read More',books_path(id: 1), class: 'btn btn-primary'%>
+		</div>
+		<div class="col-md-3 col-sm-3">
+			<h3>HTML 5 Tainer</h3>
+			<%= image_tag('cover/book5.jpg') %>
+			<%= link_to 'Read More',books_path(id: 1), class: 'btn btn-primary'%>
+		</div>
+		<div class="col-md-3 col-sm-3">
+			<h3>PHP CookBook</h3>
+			<%= image_tag('cover/book6.gif') %>
+			<%= link_to 'Read More',books_path(id: 1), class: 'btn btn-primary'%>
+		</div>
+	</div>
+</div>
